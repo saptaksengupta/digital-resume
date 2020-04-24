@@ -1,0 +1,183 @@
+@font-face {
+  font-family: salsaFont;
+  src: url(../fonts/Salsa-Regular.ttf);
+}
+
+// theme Colors
+
+$primaryColor: #151246;
+$lightFontColor: #e5e7f6;
+
+body {
+  margin: 0em;
+  padding: 0em;
+  font-family: salsaFont;
+  .page-heading {
+    background-image: url("../img/wave-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 690px;
+
+    .info-container {
+      display: flex;
+      flex-direction: row;
+      padding-top: 5em;
+      .info {
+        flex: 1;
+        .designation {
+          letter-spacing: 0.3em;
+          margin-top: 1em;
+          font-size: 1.9em;
+          font-weight: 700;
+          color: $primaryColor;
+          animation: lightUpElement 2s ease forwards, moveUp 2s ease forwards;
+        }
+        .profile-description{
+          margin-top: 1em;
+          font-weight: 700;
+          color: $lightFontColor;
+          letter-spacing: 0.15em;
+          line-height: 1.5em;
+        }
+        .name-text {
+          path {
+            stroke: #e5e7f6;
+            stroke-width: 3;
+            stroke-dasharray: 390;
+            stroke-dashoffset: 390;
+            fill: transparent;
+            animation: line-anime 2s ease forwards, fill 0.7s ease forwards 2.1s;
+          }
+        }
+      }
+
+      .desc-image {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        #image {
+          animation: lightUpElement 2s ease forwards;
+          #human {
+            animation: inFromLeft 0.5s ease forwards;
+          }
+          #flower {
+            animation: inFromRight 1s ease forwards;
+          }
+          #surface {
+            animation: inFromRight 0.5s ease forwards;
+          }
+          #window {
+            transform-origin: bottom;
+            animation: moveDiagonally 1s ease infinite alternate, inFromRight 1s ease forwards;
+          }
+          #right-hand {
+            animation: keyBoardPress 0.3s ease infinite alternate;
+          }
+          #left-hand {
+            animation: keyBoardPress 0.5s ease infinite alternate;
+          }
+          #laptop {
+            animation: inFromRight 2s forwards;
+          }
+          #avatar-shadow,
+          #page-banner-shadow,
+          #page-element-first-shadow,
+          #page-element-sec-shadow,
+          #page-element-third-shadow,
+          #page-element-fourth-shadow {
+            animation: moveDiagonally 1s ease infinite alternate;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes inFromRight {
+  from {
+    transform: translate(10%, 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes inFromLeft {
+  from {
+    transform: translate(-10%, 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveDiagonally {
+  from {
+    transform: translate(-1%, 1%);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translate(0, 100%);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes keyBoardPress {
+  to {
+    transform: rotate(0.5deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes lightUpElement {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes line-anime {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: #e5e7f6;
+  }
+}
+
+@keyframes scaleElment {
+  from {
+    transform: scale(0.98);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.container {
+  padding: 0 10em;
+}
