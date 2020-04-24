@@ -38,6 +38,7 @@ body {
           color: $lightFontColor;
           letter-spacing: 0.15em;
           line-height: 1.5em;
+          animation: lightUpElement 2s ease forwards, moveUp 2s ease forwards;
         }
         .name-text {
           path {
