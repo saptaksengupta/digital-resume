@@ -69,7 +69,7 @@ body {
           }
           #window {
             transform-origin: bottom;
-            animation: moveDiagonally 1s ease infinite alternate, inFromRight 1s ease forwards;
+            animation: inFromRight 1s ease forwards;
           }
           #right-hand {
             animation: keyBoardPress 0.3s ease infinite alternate;
@@ -86,7 +86,7 @@ body {
           #page-element-sec-shadow,
           #page-element-third-shadow,
           #page-element-fourth-shadow {
-            animation: moveDiagonally 1s ease infinite alternate;
+            animation: moveDiagonally 0.8s ease infinite alternate;
           }
         }
       }
