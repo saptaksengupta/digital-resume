@@ -2,16 +2,30 @@
   font-family: salsaFont;
   src: url(../fonts/Salsa-Regular.ttf);
 }
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  min-width: 100vh;
+  flex: 1;
+}
+
 body {
   margin: 0em;
   padding: 0em;
   font-family: salsaFont;
+}
+body .main {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
 }
 body .page-heading {
   background-image: url("../img/wave-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 690px;
+  background-color: #E1F5FE;
 }
 body .page-heading .info-container {
   display: flex;
