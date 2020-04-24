@@ -1,23 +1,35 @@
+
+@import './variables';
+
 @font-face {
   font-family: salsaFont;
   src: url(../fonts/Salsa-Regular.ttf);
 }
 
-// theme Colors
+html, body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  min-width: 100vh;
+  flex: 1;
+}
 
-$primaryColor: #151246;
-$lightFontColor: #e5e7f6;
 
 body {
   margin: 0em;
   padding: 0em;
   font-family: salsaFont;
+  .main {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
   .page-heading {
     background-image: url("../img/wave-bg.svg");
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 690px;
-
+    background-color: $flat-light-bg-color;
     .info-container {
       display: flex;
       flex-direction: row;
