@@ -35,6 +35,7 @@ body .page-heading .info-container .info .profile-description {
   color: #e5e7f6;
   letter-spacing: 0.15em;
   line-height: 1.5em;
+  animation: lightUpElement 2s ease forwards, moveUp 2s ease forwards;
 }
 body .page-heading .info-container .info .name-text path {
   stroke: #e5e7f6;
