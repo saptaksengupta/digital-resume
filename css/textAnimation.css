@@ -64,7 +64,7 @@ body .page-heading .info-container .desc-image #image #surface {
 }
 body .page-heading .info-container .desc-image #image #window {
   transform-origin: bottom;
-  animation: moveDiagonally 1s ease infinite alternate, inFromRight 1s ease forwards;
+  animation: inFromRight 1s ease forwards;
 }
 body .page-heading .info-container .desc-image #image #right-hand {
   animation: keyBoardPress 0.3s ease infinite alternate;
@@ -81,7 +81,7 @@ body .page-heading .info-container .desc-image #image #page-element-first-shadow
 body .page-heading .info-container .desc-image #image #page-element-sec-shadow,
 body .page-heading .info-container .desc-image #image #page-element-third-shadow,
 body .page-heading .info-container .desc-image #image #page-element-fourth-shadow {
-  animation: moveDiagonally 1s ease infinite alternate;
+  animation: moveDiagonally 0.8s ease infinite alternate;
 }
 
 @keyframes inFromRight {
