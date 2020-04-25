@@ -1,0 +1,4 @@
+[submodule "dist"]
+	path = dist
+	url = git@github.com:saptaksengupta/digital-resume.git
+	branch = deploy
