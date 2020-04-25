@@ -1,0 +1,12 @@
+<svg width="1960" height="502" viewBox="0 0 1960 502" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="curved-content-bg-upper">
+<rect id="Rectangle 5" width="1960" height="502" fill="#E1F5FE"/>
+<path id="Rectangle 7" d="M0 389.725C543.267 351.097 1017.43 75.17 1960 116.136V502H0V389.725Z" fill="url(#paint0_linear)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="2064.52" y1="502" x2="-184.349" y2="502" gradientUnits="userSpaceOnUse">
+<stop stop-color="#A9BBFD"/>
+<stop offset="1" stop-color="#8AF795" stop-opacity="0.44"/>
+</linearGradient>
+</defs>
+</svg>
