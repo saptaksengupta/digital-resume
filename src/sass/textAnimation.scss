@@ -1,9 +1,7 @@
-
 @import './variables';
-
 @font-face {
   font-family: salsaFont;
-  src: url(../fonts/Salsa-Regular.ttf);
+  src: url('../fonts/Salsa-Regular.ttf');
 }
 
 html, body {
@@ -25,7 +23,7 @@ body {
     min-width: 100%;
   }
   .page-heading {
-    background-image: url("../img/wave-bg.svg");
+    background-image: url('../images/wave-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 690px;
