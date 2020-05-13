@@ -1,0 +1,53 @@
+@import "./variables";
+
+a {
+  cursor: pointer;
+  color: $linkTextColor;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 5%;
+  z-index: 1;
+  min-height: 25em;
+  min-width: 40em;
+  -webkit-box-shadow: -1px 6px 50px -5px rgba(106, 125, 163, 1);
+  -moz-box-shadow: -1px 6px 50px -5px rgba(106, 125, 163, 1);
+  box-shadow: -1px 6px 50px -5px rgba(106, 125, 163, 1);
+}
+
+.carausel-controler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 3em;
+  min-height: 3em;
+  border-radius: 50%;
+}
