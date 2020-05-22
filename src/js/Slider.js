@@ -6,10 +6,6 @@ class Slider {
         this.activeIndex = 0
         this.sliderPresentationWindow = [];
 
-        // if (numberOfSlides !== slideContents.length) {
-        //     console.error("Slider Configuration error")
-        // }
-        // this.numberOfSlides = numberOfSlides;
         this.slideContents = slideContents;
         this.initSlider();
     }
@@ -24,6 +20,15 @@ class Slider {
 
 
     onChangeSlide(direction) {
+       
+        if(direction == 'left' && this.activeIndex == 0) {
+            return false;
+        }
+
+        if(direction == 'right' && this.activeIndex == this.slideContents.length - 1){
+            return false;
+        }
+
         const slideToHide = this.getSlideToRepresentByIndex(this.activeIndex);
         switch (direction) {
             case 'right':
@@ -34,14 +39,49 @@ class Slider {
                 break;
         }
         const slideToShow = this.getSlideToRepresentByIndex(this.activeIndex);
-        this.toggleSlide(slideToHide, slideToShow);
+        if(direction == 'left') {
+            this.slideRight(slideToHide, slideToShow)
+        } else {
+            this.slideLeft(slideToHide, slideToShow)
+        }
         return;
     }
 
-    toggleSlide(slideToHide, slideToShow) {
-        
+    slideLeft(slideToHide, slideToShow) {
+        slideToHide.classList.add("hide-out-left")
+        setTimeout(() => {
+            slideToHide.style.display = 'none';
+            slideToShow.style.display = 'flex';
+            slideToShow.classList.add("show-in-left")
+        }, 500)
+        setTimeout(() => {
+            this.removeAnimationClasses(slideToShow, slideToHide);
+        }, 1000)
     }
 
+    slideRight(slideToHide, slideToShow) {
+        slideToHide.classList.add('hide-out-right');
+        setTimeout(() => {
+            slideToHide.style.display = 'none';
+            slideToShow.style.display = 'flex';
+            slideToShow.classList.add("show-in-right")
+        }, 500)
+
+        setTimeout(() => {
+            this.removeAnimationClasses(slideToShow, slideToHide);
+        }, 1000)
+    }
+
+    removeAnimationClasses(currentDiv, previousDiv) {
+        currentDiv.classList.remove("show-in-left")
+        currentDiv.classList.remove("show-in-right")
+        currentDiv.classList.remove("hide-out-left")
+        currentDiv.classList.remove("hide-out-right")
+
+        previousDiv.classList.remove("hide-out-left")
+        previousDiv.classList.remove("hide-out-right")
+
+    }
 
     getDomInstanceById(domId) {
         return document.getElementById(domId);

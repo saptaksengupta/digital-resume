@@ -1,0 +1,63 @@
+.slider-content.hide-out-left {
+  animation: hideOutLeft ease-out 0.5s forwards;
+}
+
+.slider-content.show-in-left {
+    animation: showInLeft ease-in 0.5s forwards;
+  }
+
+
+
+.slider-content.hide-out-right {
+  animation: hideOutRight ease-out 0.5s forwards;
+}
+
+.slider-content.show-in-right {
+  animation: showInRight ease-out 0.5s forwards;
+}
+
+
+
+@keyframes hideOutLeft {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes hideOutRight {
+    from {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  
+    to {
+      transform: translate(100%, 0);
+      opacity: 0;
+    }
+  }
+
+@keyframes showInLeft {
+  from {
+    transform: translate(100%, 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes showInRight {
+    from {
+      transform: translate(-100%, 0);
+    }
+  
+    to {
+      transform: translate(0, 0);
+    }
+  }

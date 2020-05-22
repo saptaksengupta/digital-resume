@@ -1,7 +1,8 @@
 
 var sl = new Slider([
     "medical-app", 
-    "todo-pwa"
+    "todo-pwa",
+    "manocha-academy"
 ]);
 
 function onSwipeRight() {
