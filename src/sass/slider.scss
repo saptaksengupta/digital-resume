@@ -1,3 +1,27 @@
+@import './mixins';
+.slider-content{
+  width: 95%;
+  padding: 0 1em;
+  @include md {
+    width: 90%; 
+    padding: 0 5em;
+  }
+}
+.carausel-controler {
+  display: none;
+  @include md {
+    display: flex;
+    width: 5%; 
+    justify-content: flex-end;
+  }
+}
+
+.carausel-controler-sm {
+  @include md {
+    display: none;
+  }
+}
+
 .slider-content.hide-out-left {
   animation: hideOutLeft ease-out 0.5s forwards;
 }

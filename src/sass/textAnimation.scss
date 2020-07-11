@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 @font-face {
   font-family: salsaFont;
   src: url('../fonts/Salsa-Regular.ttf');
@@ -8,7 +9,6 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: row;
-  min-width: 100vh;
   flex: 1;
 }
 
@@ -20,37 +20,67 @@ body {
   .main {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
   }
   .page-heading {
-    background-image: url('../images/wave-bg.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 690px;
-    background-color: $flat-light-bg-color;
+    min-height: 90vh;
+    background: linear-gradient(111.2deg, #2E346D 3.58%, rgba(135, 145, 233, 0) 99%);
+    background-blend-mode: hue;
+    mix-blend-mode: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include md {
+      min-height: 690px;
+      background: none;
+      background-blend-mode: normal;
+      mix-blend-mode: normal;
+      background-color: $flat-light-bg-color;
+      background-image: url('../images/wave-bg.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      justify-content: flex-start;
+    }
     .info-container {
       display: flex;
       flex-direction: row;
-      padding-top: 5em;
+      align-items: center;
+      width: 100%;
+      @include md {
+        padding-top: 5em;
+        align-items: flex-start;
+      }
       .info {
         flex: 1;
         .designation {
-          letter-spacing: 0.3em;
-          margin-top: 1em;
-          font-size: 1.9em;
-          font-weight: 700;
-          color: $primaryColor;
+          font-size: 2em;
+          @include md {
+            letter-spacing: 0.3em;
+            margin-top: 1em;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: $primaryColor;
+          }
           animation: lightUpElement 2s ease forwards, moveUp 2s ease forwards;
         }
         .profile-description{
+          font-weight: 500;
+          font-size: 0.9em;
           margin-top: 1em;
-          font-weight: 700;
-          color: $lightFontColor;
-          letter-spacing: 0.15em;
-          line-height: 1.5em;
+          @include md {
+            font-weight: 700;
+            font-size: 1em;
+            color: $lightFontColor;
+            letter-spacing: 0.15em;
+            line-height: 1.5em;
+          }
           animation: lightUpElement 2s ease forwards, moveUp 2s ease forwards;
         }
         .name-text {
+          width: 300px;
+          fill: $primaryColor;
+          @include md {
+            width: 400px;
+          }
           path {
             stroke: #e5e7f6;
             stroke-width: 3;
@@ -63,9 +93,12 @@ body {
       }
 
       .desc-image {
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: flex-end;
+        @include md {
+          display: flex;
+        }
         #image {
           animation: lightUpElement 2s ease forwards;
           #human {
@@ -190,5 +223,8 @@ body {
 }
 
 .container {
-  padding: 0 10em;
+  padding: 0 1em;
+  @include md {
+    padding: 0 10em;
+  }
 }
