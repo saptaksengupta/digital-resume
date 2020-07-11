@@ -4,7 +4,7 @@
   "description": "A Simple Plaground To Handson Animation Experience",
   "main": "index.html",
   "scripts": {
-    "start": "webpack-dev-server --history-api-fallback --inline --progress",
+    "start": "webpack-dev-server --host 0.0.0.0 --history-api-fallback --inline --progress",
     "build": "webpack --config webpack.config.js",
     "sass": "sass --watch src/styles/sass:src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
