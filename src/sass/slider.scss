@@ -1,4 +1,22 @@
 @import './mixins';
+@import './variables';
+
+#triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid $primaryColor;
+  border-bottom: 5px solid transparent;
+}
+
+#triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid $primaryColor;
+  border-bottom: 5px solid transparent;
+}
+
 .slider-content{
   width: 95%;
   padding: 0 1em;

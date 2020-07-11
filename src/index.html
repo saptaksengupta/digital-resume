@@ -319,7 +319,8 @@
                     <div class="section-heading-with-controller">
                         <div class="carausel-controler-sm">
                             <div class="card arrow-btn" onclick="onSwipeLeft()">
-                                < </div>
+                                <div id="triangle-left"></div>
+                            </div>
                         </div>
                         <div class="section-heading">
                             <h3>Working area/domain</h3>
@@ -328,191 +329,196 @@
                             </div>
                         </div>
                         <div class="carausel-controler-sm">
-                            <div class="card arrow-btn" onclick="onSwipeRight()"> > </div>
+                            <div class="card arrow-btn" onclick="onSwipeRight()"> 
+                                <div id="triangle-right"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="section-content row">
                         <div class="carausel-controler">
                             <div class="card arrow-btn" onclick="onSwipeLeft()">
-                                < </div>
+                                <div id="triangle-left"></div>
                             </div>
-                            <div id="medical" class="row slider-content">
-                                <div class="work-description">
-                                    <div class="column layout-center align-start work-description-card">
-                                        <h2>Medical / Health care</h2>
-                                        <div class="description">
-                                            A SaaS application functional in Mexico and Canada. Used for clinic
-                                            management, appointment and ticket bookings,
-                                            doctor services management, event scheduling and recurrence generations.
-                                            Introduced Wait time optimizations, smart packaged appointment suggestions
-                                            and handy notifications and reminders.
-                                        </div>
-                                        <div class="technologies">
-                                            <div>Tools and framework used</div>
-                                            <div class="logo">
-                                                <img title="angular" src="./images/logos/angular-icon.svg">
-                                                <img title="laravel" src="./images/logos/laravel.svg">
-                                                <img title="mysql" src="./images/logos/mysql.svg">
-                                                <img title="vueJs" src="./images/logos/vue-js-1.svg">
-                                                <img title="javascript" src="./images/logos/javascript-1.svg">
-                                                <img title="webpack" src="./images/logos/webpack-icon.svg">
-                                                <img title="socket.io" src="./images/logos/socket-io.svg">
-                                                <img title="ionic" src="./images/logos/ionic.svg">
-                                            </div>
-                                        </div>
+                        </div>
+                        <div id="medical" class="row slider-content">
+                            <div class="work-description">
+                                <div class="column layout-center align-start work-description-card">
+                                    <h2>Medical / Health care</h2>
+                                    <div class="description">
+                                        A SaaS application functional in Mexico and Canada. Used for clinic
+                                        management, appointment and ticket bookings,
+                                        doctor services management, event scheduling and recurrence generations.
+                                        Introduced Wait time optimizations, smart packaged appointment suggestions
+                                        and handy notifications and reminders.
                                     </div>
-                                </div>
-                                <div class="project-avatar">
-                                    <img src="./images/med-tech-avatar.svg" />
-                                </div>
-                            </div>
-                            <div id="education" class="row slider-content" style="display: none;">
-                                <div class="work-description">
-                                    <div class="column layout-center align-start work-description-card">
-                                        <h2>Ed-Tech</h2>
-                                        <div class="description">
-                                            <div>An web based E-learning VOD platform (Video In Demand) which supports
-                                                quiz, question Answers and Interactivity.
-                                                Also have configurable backend.
-                                            </div>
-                                            <div>
-                                                Also having experience working with learge scale Educational platform
-                                                that used accross all over the globe.
-                                                having complex architecture built with couple of microservices.
-                                            </div>
-                                        </div>
-                                        <div class="technologies">
-                                            <div>Tools and framework used</div>
-                                            <div class="logo">
-                                                <img title="Python" src="./images/logos/python-5.svg">
-                                                <img title="laravel" src="./images/logos/laravel.svg">
-                                                <img title="mysql" src="./images/logos/mysql.svg">
-                                                <img title="react" src="./images/logos/react.svg">
-                                                <img title="vueJs" src="./images/logos/vue-js-1.svg">
-                                                <img title="javascript" src="./images/logos/javascript-1.svg">
-                                                <img title="NodeJs" src="./images/logos/nodejs-2.svg">
-                                            </div>
+                                    <div class="technologies">
+                                        <div>Tools and framework used</div>
+                                        <div class="logo">
+                                            <img title="angular" src="./images/logos/angular-icon.svg">
+                                            <img title="laravel" src="./images/logos/laravel.svg">
+                                            <img title="mysql" src="./images/logos/mysql.svg">
+                                            <img title="vueJs" src="./images/logos/vue-js-1.svg">
+                                            <img title="javascript" src="./images/logos/javascript-1.svg">
+                                            <img title="webpack" src="./images/logos/webpack-icon.svg">
+                                            <img title="socket.io" src="./images/logos/socket-io.svg">
+                                            <img title="ionic" src="./images/logos/ionic.svg">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-avatar">
-                                    <img src="./images/ed-tec-avatar.svg" />
-                                </div>
                             </div>
-                            <div class="carausel-controler">
-                                <div class="card arrow-btn" onclick="onSwipeRight()"> > </div>
+                            <div class="project-avatar">
+                                <img src="./images/med-tech-avatar.svg" />
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="section-two">
-                    <div class="container">
-                        <div class="section-heading">
-                            <h3>ShowCase</h3>
-                            <!-- <div class="hading-desc">
-                                Some Exta
-                            </div> -->
-                        </div>
-                        <div class="section-content">
-                            <div class="showcase-container row">
-                                <div class="card show-case-items column align-center">
-                                    <div class="showcase-heading">Share work-items in real time</div>
-                                    <div class="showcase-description">
-                                        A real time responsive web application that will help you to
-                                        manage your work item in real time accross your multiple devices
+                        <div id="education" class="row slider-content" style="display: none;">
+                            <div class="work-description">
+                                <div class="column layout-center align-start work-description-card">
+                                    <h2>Ed-Tech</h2>
+                                    <div class="description">
+                                        <div>An web based E-learning VOD platform (Video In Demand) which supports
+                                            quiz, question Answers and Interactivity.
+                                            Also have configurable backend.
+                                        </div>
+                                        <div>
+                                            Also having experience working with learge scale Educational platform
+                                            that used accross all over the globe.
+                                            having complex architecture built with couple of microservices.
+                                        </div>
                                     </div>
-                                    <div class="showcase-tech-logos">
-                                        <img title="react" src="./images/logos/react.svg">
-                                        <img title="javascript" src="./images/logos/javascript-1.svg">
-                                        <img title="mysql" src="./images/logos/mysql.svg">
-                                        <img title="NodeJs" src="./images/logos/nodejs-2.svg">
-                                        <img title="NestJs" src="./images/logos/nestjs.svg">
-                                    </div>
-                                </div>
-                                <div class="card show-case-items column align-center">
-                                    <div class="showcase-heading">Lexicon CLI tool</div>
-                                    <div class="showcase-description">
-                                        A node cli tool (NPM package) that will help generate coding template files for
-                                        Datastructure and algorithms problem solving locally for any platforms like
-                                        Hackerrank, Leetcode, Codeforces etc...
-                                    </div>
-                                    <div class="showcase-tech-logos">
-                                        <img title="javascript" src="./images/logos/javascript-1.svg">
-                                        <img title="NodeJs" src="./images/logos/nodejs-2.svg">
-                                        <img title="Npm" src="./images/logos/npm.svg">
-                                    </div>
-                                </div>
-                                <div class="card show-case-items column align-center">
-                                    <div class="showcase-heading">Dsa Playground</div>
-                                    <div class="showcase-description">
-                                        Currnetly maintaining a Data Structure and algorithms problem solving repository
-                                        that consist of
-                                        solutions
-                                        that are meant to be solved to brushup problem solving skills
-                                    </div>
-                                    <div class="showcase-tech-logos">
-                                        <img title="Python" src="./images/logos/python-5.svg">
-                                        <img title="NodeJs" src="./images/logos/nodejs-2.svg">
+                                    <div class="technologies">
+                                        <div>Tools and framework used</div>
+                                        <div class="logo">
+                                            <img title="Python" src="./images/logos/python-5.svg">
+                                            <img title="laravel" src="./images/logos/laravel.svg">
+                                            <img title="mysql" src="./images/logos/mysql.svg">
+                                            <img title="react" src="./images/logos/react.svg">
+                                            <img title="vueJs" src="./images/logos/vue-js-1.svg">
+                                            <img title="javascript" src="./images/logos/javascript-1.svg">
+                                            <img title="NodeJs" src="./images/logos/nodejs-2.svg">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-three">
-                    <div class="section-heading">
-                        <h3>Education</h3>
-                        <div class="hading-desc">
-                            Something, That prepared me
-                        </div>
-                    </div>
-                    <div class="education-section-content">
-                        <div class="education-description">
-                            <div id="btech">
-                                <div class="board">B-Tech, Moulana Abul Kalam Azad University Of Technology</div>
-                                <div class="marks">
-                                    8.1 / 10 (CGPA)
-                                </div>
+                            <div class="project-avatar">
+                                <img src="./images/ed-tec-avatar.svg" />
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="section-four">
-                    <div class="footer">
-                        <div class="section-heading">
-                            <h3>Contacts</h3>
-                        </div>
-                        <div class="heading">
-                            <h1>Saptak Sengupta</h1>
-                            <div class="contact">
-                                <div>
-                                    ✉️ deeps.sengupta@gmail.com
-                                </div>
-                                <div>
-                                    📱8013778491
-                                </div>
+                        <div class="carausel-controler">
+                            <div class="card arrow-btn" onclick="onSwipeRight()"> 
+                                <div id="triangle-right"></div>
                             </div>
                         </div>
-                        <div class="profile-links">
-                            <a href="https://www.linkedin.com/in/saptak-sengupta-8866ab160/" target="_blank">
-                                <img title="LinkedIn" src="./images/logos/linkedin-icon-2.svg">
-                            </a>
-                            <a href="https://github.com/saptaksengupta" target="_blank">
-                                <img title="Github" src="./images/logos/github-1.svg">
-                            </a>
-                            <a href="https://medium.com/@deeps.sengupta" target="_blank">
-                                <img title="Medium" src="./images/logos/monogram-medium.svg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        Made With 💖 by 🙋🏻‍♂️
                     </div>
                 </div>
             </div>
+            <div class="section-two">
+                <div class="container">
+                    <div class="section-heading">
+                        <h3>ShowCase</h3>
+                        <!-- <div class="hading-desc">
+                                Some Exta
+                            </div> -->
+                    </div>
+                    <div class="section-content">
+                        <div class="showcase-container row">
+                            <div class="card show-case-items column align-center">
+                                <div class="showcase-heading">Share work-items in real time</div>
+                                <div class="showcase-description">
+                                    A real time responsive web application that will help you to
+                                    manage your work item in real time accross your multiple devices
+                                </div>
+                                <div class="showcase-tech-logos">
+                                    <img title="react" src="./images/logos/react.svg">
+                                    <img title="javascript" src="./images/logos/javascript-1.svg">
+                                    <img title="mysql" src="./images/logos/mysql.svg">
+                                    <img title="NodeJs" src="./images/logos/nodejs-2.svg">
+                                    <img title="NestJs" src="./images/logos/nestjs.svg">
+                                </div>
+                            </div>
+                            <div class="card show-case-items column align-center">
+                                <div class="showcase-heading">Lexicon CLI tool</div>
+                                <div class="showcase-description">
+                                    A node cli tool (NPM package) that will help generate coding template files for
+                                    Datastructure and algorithms problem solving locally for any platforms like
+                                    Hackerrank, Leetcode, Codeforces etc...
+                                </div>
+                                <div class="showcase-tech-logos">
+                                    <img title="javascript" src="./images/logos/javascript-1.svg">
+                                    <img title="NodeJs" src="./images/logos/nodejs-2.svg">
+                                    <img title="Npm" src="./images/logos/npm.svg">
+                                </div>
+                            </div>
+                            <div class="card show-case-items column align-center">
+                                <div class="showcase-heading">Dsa Playground</div>
+                                <div class="showcase-description">
+                                    Currnetly maintaining a Data Structure and algorithms problem solving repository
+                                    that consist of
+                                    solutions
+                                    that are meant to be solved to brushup problem solving skills
+                                </div>
+                                <div class="showcase-tech-logos">
+                                    <img title="Python" src="./images/logos/python-5.svg">
+                                    <img title="NodeJs" src="./images/logos/nodejs-2.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-three">
+                <div class="section-heading">
+                    <h3>Education</h3>
+                    <div class="hading-desc">
+                        Something, That prepared me
+                    </div>
+                </div>
+                <div class="education-section-content">
+                    <div class="education-description">
+                        <div id="btech">
+                            <div class="board">B-Tech, Moulana Abul Kalam Azad University Of Technology</div>
+                            <div class="marks">
+                                8.1 / 10 (CGPA)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-four">
+                <div class="footer">
+                    <div class="section-heading">
+                        <h3>Contacts</h3>
+                    </div>
+                    <div class="heading">
+                        <h1>Saptak Sengupta</h1>
+                        <div class="contact">
+                            <div>
+                                ✉️ deeps.sengupta@gmail.com
+                            </div>
+                            <div>
+                                📱8013778491
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-links">
+                        <a href="https://www.linkedin.com/in/saptak-sengupta-8866ab160/" target="_blank">
+                            <img title="LinkedIn" src="./images/logos/linkedin-icon-2.svg">
+                        </a>
+                        <a href="https://github.com/saptaksengupta" target="_blank">
+                            <img title="Github" src="./images/logos/github-1.svg">
+                        </a>
+                        <a href="https://medium.com/@deeps.sengupta" target="_blank">
+                            <img title="Medium" src="./images/logos/monogram-medium.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    Made With 💖 by 🙋🏻‍♂️
+                </div>
+            </div>
         </div>
-        <script src="./js/Slider.js" async defer></script>
-        <script src="./js/utils.js" async defer></script>
+    </div>
+    <script src="./js/Slider.js" async defer></script>
+    <script src="./js/utils.js" async defer></script>
 </body>
 
 </html>

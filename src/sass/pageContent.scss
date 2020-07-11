@@ -181,11 +181,15 @@
       }
       .showcase-container {
         flex-wrap: wrap;
+        justify-content: center;
         .show-case-items {
           width: 100%;
           min-height: 150px;
           padding: 0.5em;
           margin: 1em;
+          @include md {
+            width: 25%;
+          }
           .showcase-heading {
             padding-bottom: 0.5em;
             text-align: center;
