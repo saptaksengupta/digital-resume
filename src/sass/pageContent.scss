@@ -46,9 +46,77 @@
     min-height: 40em;
   }
 
+  .section-three {
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    .education-section-content {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .education-description {
+          width: 40%;
+          font-size: 2em;
+          div#btech {
+            .board {
+              text-align: center;
+            }
+            .marks{
+              text-align: center;
+              margin: 1em 0;
+            }
+          }
+        }
+    }
+  }
+
+  .section-four {
+    min-height: 400px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(270deg, #C3F9C8 -32.6%, rgba(255, 255, 255, 0) 123.01%), #A9BBFD;
+    color: $primaryColor;
+    .footer {
+      margin: 0 1em;
+      border-bottom: 1px solid whitesmoke;
+      padding-bottom: 1em;
+    }
+    .heading{
+      text-align: center;
+      .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+        div{
+          margin: 0.3em;
+        }
+      }
+    }
+    .profile-links{
+      width: 100%;
+      text-align: center;
+      img{
+        margin: 0.5em;
+        height: 2em;
+        width: 2em;
+      }
+    }
+    .copyright{
+      padding: 1em 0;
+      text-align: center;
+    }
+  }
+
   .section-content {
-      padding-top: 10em;
-      padding-bottom: 10em;
+      padding-top: 5em;
+      padding-bottom: 5em;
       .work-description{
         flex: 2;
         .work-description-card{
@@ -71,7 +139,38 @@
           }
         }
       }
-      
+      .showcase-container {
+        flex-wrap: wrap;
+        .show-case-items {
+          width: 100%;
+          min-height: 150px;
+          padding: 0.5em;
+          margin: 1em;
+          .showcase-heading {
+            padding-bottom: 0.5em;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            width: 100%;
+          }
+          .showcase-description{
+            width: 100%;
+            flex: 1;
+            font-size: small;
+            margin: 0.5em 0;
+            text-align: center;
+            color: gray;
+            font-weight: 100;
+          }
+          .showcase-tech-logos {
+            margin: 0.5em 0;
+            img {
+              height: 2em;
+              width: 2em;
+              margin: 0 0.5em;
+            }
+          }
+        }
+      }
       .project-avatar{
           display: flex;
           flex-direction: row;
