@@ -11,6 +11,15 @@ module.exports = {
     module: {  // where we defined file patterns and their loaders
         rules: [
             {
+                test: /\.html$/,
+                use: [
+                    {
+                        loader: 'html-loader',
+                        options: { minimize: true }
+                    }
+                ]
+            },
+            {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
                 use: {
@@ -85,14 +94,14 @@ module.exports = {
     plugins: [  // Array of plugins to apply to build chunk
         new HtmlWebpackPlugin({
             template: __dirname + "/src/index.html",
-            inject: 'body'
+            filename: './index.html',
         }),
         new MiniCssExtractPlugin({
             filename: "style.css"
         })
     ],
     devServer: {  // configuration for webpack-dev-server
-        contentBase: './src',  //source of static assets
+        contentBase: './dist',  //source of static assets
         port: 7700, // port to run dev-server
     }
 };

@@ -95,3 +95,4 @@ class Slider {
         return this.sliderPresentationWindow[index];
     }
 }
+export default Slider;
